@@ -41,6 +41,7 @@ l=[];
 function continu()
 {
     var total=parseInt(document.getElementById("res5").innerHTML.split(" ")[2]);
+   
     l.push(total);
       var num1 = Math.floor(Math.random() * 7);
      document.getElementById("res4").innerHTML="Computer: "+num1+" runs";
@@ -163,7 +164,7 @@ l1=[]
 function continu2()
 {
   var total=parseInt(document.getElementById("res13").innerHTML.split(" ")[1]);
-
+   console.log(total);
     l1.push(total);
       var num31 = Math.floor(Math.random() * 7);
      document.getElementById("res12").innerHTML="Computer: "+num31+" runs";
@@ -192,11 +193,11 @@ function check2()
                 {   
                     var s=0;
                     document.getElementById("res13").innerHTML="Computer is out!";
-                    for (var i=0;i<l1.length;i++)
+                    for (var i=1;i<l1.length;i++)
                     {
                         s=s +l1[i];
                     }
-                    console.log(s);
+                    console.log(l1);
                     document.getElementById("res13").innerHTML="Computer total score is "+s+" runs";
                     document.getElementById("res12").style.display="none";
                     document.getElementById("res11").style.display="none";

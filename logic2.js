@@ -1,3 +1,30 @@
+var x1=document.getElementById("song1");
+    
+     let isplay=false;
+    function fun2()
+    {
+       x1.play();
+       isplay=true;
+        
+    }
+    function fun3()
+    {
+        isplay=false;
+       x1.pause();
+       
+       
+    }
+    function fun1()
+    {
+        if(isplay)
+        {
+            fun3();
+        }
+       else{
+           fun2();
+       }
+    }
+  
 function toss()
 {
      var x1 =Math.random() < 0.5 ? 'H' : 'T';
@@ -30,6 +57,11 @@ function toss()
        }
 
 }
+
+ else
+    {
+        alert("Please enter H or T only");
+    }
 }
 l1=[]
 l2=[]
@@ -157,7 +189,7 @@ function check1()
 function show1(){
 
  
-    document.getElementById("res5").innerHTML="All Run: "+l3;
+    document.getElementById("res6").innerHTML="All Run: "+l3;
 }
 
 
@@ -166,12 +198,15 @@ function result()
    var firstbatter = document.getElementById("res7").innerHTML=document.getElementById("res3").innerText;
  
    var secondbatter= document.getElementById("res8").innerHTML=document.getElementById("res5").innerText;
+
+   var firstbatter1=document.getElementById("res3").innerText;
+    var secondbatter1=document.getElementById("res5").innerText;
    
-   if (firstbatter.split(" ")[2]>secondbatter.split(" ")[2])
+   if (firstbatter1.split(" ")[2]>secondbatter1.split(" ")[2])
    {
            document.getElementById("res9").innerHTML="First Batter is winner"
    }
-   else if (firstbatter.split(" ")[2]==secondbatter.split(" ")[2])
+   else if (firstbatter1.split(" ")[2]==secondbatter1.split(" ")[2])
    {
           document.getElementById("res9").innerHTML="Match Draw"
    }

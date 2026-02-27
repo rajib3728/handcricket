@@ -104,3 +104,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
+.container3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: rgb(241, 60, 60);
+}
