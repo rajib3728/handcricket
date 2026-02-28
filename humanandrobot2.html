@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>humanandrobot</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="shortcut icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<audio src="song1.mp3" id="song1"></audio>
+    <button style="margin-left: 85%;" class="btn2" onclick="fun1()"><i class="fa fa-music"></i></button>
+    <center>
+         <button onclick="history.back()" class="btn2" ><i class="fa fa-arrow-left"></i> Back</button>
+         <button onclick="location.reload()" class="btn2" ><i class="fa fa-refresh"></i> Refresh</button>
+         <div class="container2">
+         <h3 class="txt2">STEP:1</h3>
+         <img src="ballbatimage.png" class="img3">
+         <br>
+         <button class="btn2" id="bat" onclick="dobat()"> Bat</button>
+         <br>
+         <button class="btn2" id="ball" onclick="doball()">Computer ball</button>
+         <br>
+         <button class="btn2" id="check" onclick="check()">Check</button>
+         <br>
+         <button class="btn2" id="show" onclick="show()">Show</button>
+        
+        <p id="res1" class="txt2"></p>
+        <p id="res2" class="txt2"></p>
+        <p id="res3" class="txt2"></p>
+         <p id="res4" class="txt2"></p>
+           <p id="res5" class="txt2"></p>
+
+         </div>
+  <div class="container2">
+            <h3 class="txt2">STEP:2</h3>
+            <img src="scoreimage.png" class="img3">
+
+              <br>
+         <button class="btn2" id="bat1" style="display: none;" onclick="dobat1()">Computer Bat</button>
+         <br>
+         <button class="btn2" id="ball1" style="display: none;" onclick="doball1()">ball</button>
+         <br>
+         <button class="btn2" id="check1" style="display: none;" onclick="check1()">Check</button>
+         <br>
+         <button class="btn2" id="show1" style="display: none;" >Show</button>
+            <p class="txt2" id="res6"></p>
+             <p id="res7" class="txt2"></p>
+        <p id="res8" class="txt2"></p>
+         <p id="res9" class="txt2"></p>
+           <p id="res10" class="txt2"></p>
+
+  </div>
+
+      <div class="container2">
+            <h3 class="txt2">STEP:3</h3>
+            <img src="wicketimage.png" class="img3">
+
+             <button class="btn2" style="display: none;" id="result" onclick="result()">Result</button>
+             <p id="res11" class="txt2">Result</p>
+              <p id="res12" class="txt2"></p>
+              <p id="res13" class="txt2"></p>
+         </div>
+   <script src="logic1.js"></script>
+
+   </body>

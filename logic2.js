@@ -109,7 +109,7 @@ function check()
                                     document.getElementById("ball1").style.display="block"; 
           document.getElementById("bat1").style.display="block";  
            document.getElementById("check1").style.display="block"; 
-
+             document.getElementById("show1").style.display="block"; 
                                        
 
 
@@ -215,3 +215,5 @@ function result()
     document.getElementById("res9").innerHTML="Second Batter is winner"
    }
 }
+
+

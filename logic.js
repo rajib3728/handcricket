@@ -106,6 +106,8 @@ function toss()
            document.getElementById("tossbtn").style.backgroundColor="grey";
            document.getElementById("ball").style.display="block"; 
           document.getElementById("bat").style.display="block";
+          window.open("humanandrobot2.html")
+          window.close("humanandrobot.html")
            
         }
         else
